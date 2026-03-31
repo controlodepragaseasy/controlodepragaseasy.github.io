@@ -2,91 +2,635 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Easy Desinfestações | Controlo de Pragas Lisboa</title>
-<meta name="description" content="Easy Desinfestações - Controlo de pragas profissional em Lisboa">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Easy Desinfestações","url":"https://controlodepragaseasy.github.io/","telephone":"+351965779519"}</script>
+<meta name="description" content="Easy Desinfestações - Controlo de pragas profissional em Lisboa. Baratas, Ratos, Percevejos, Formigas e mais.">
+<meta property="og:title" content="Easy Desinfestações">
+<meta property="og:description" content="Serviço profissional de controlo de pragas em Lisboa">
+<meta property="og:url" content="https://controlodepragaseasy.github.io">
 <style>
-@media(max-width:800px){
-  .hero h1{font-size:2.2em}
-  .sg,.grid,.blog-grid,.video-grid,.tg{grid-template-columns:1fr}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+:root {
+    --primary: #1a472a;
+    --secondary: #2d6a3e;
+    --accent: #f39c12;
+    --light: #f8f9fa;
+    --text: #333;
+    --border: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: #fff;
+}
+
+/* ===== RESPONSIVIDADE MOBILE ===== */
 @media (max-width: 768px) {
-  nav { padding: 0 16px; height: 56px; }
-  .logo { font-size: 1em; }
-  .nl { gap: 14px; }
-  .nl a { font-size: 0.75em; }
-  .hcont { padding: 0 16px; }
-  .hero h1 { font-size: 2em; margin-bottom: 16px; }
-  .hero p { font-size: 0.95em; }
-  .hbadge { padding: 6px 14px; font-size: 0.7em; }
-  .btns { flex-direction: column; gap: 10px; }
-  .btn { width: 100%; padding: 12px 20px; font-size: 0.88em; }
-  .hst { gap: 20px; padding-top: 20px; }
-  .hs { flex: 1; min-width: 100px; }
-  .grid, .sg { grid-template-columns: 1fr; gap: 20px; }
-  .blog-grid { grid-template-columns: 1fr; gap: 16px; }
-  .step { padding: 20px 16px; margin: 12px 0; }
-  .sec { padding: 50px 16px; }
-  .c { max-width: 100%; }
-  .sh { font-size: 1.6em; margin-bottom: 8px; }
-  div[style*="grid-template-columns:1fr"] { grid-template-columns: 1fr !important; }
-  .video-grid { grid-template-columns: 1fr; gap: 16px; }
-  .video-placeholder { height: 200px; }
-  .tg { grid-template-columns: 1fr; gap: 16px; }
-  .tc { padding: 16px; }
-  .blog-card { border-radius: 12px; }
-  .blog-image { height: 150px; }
-  .cert-badges { gap: 12px; margin: 16px 0; justify-content: space-around; }
-  .cert-badge { padding: 12px; font-size: 0.85em; }
-  .form-box { padding: 20px; }
-  form input { padding: 10px 12px; font-size: 0.86em; }
-  footer { padding: 28px 16px; }
-  div[style*="display:flex"][style*="gap:18px"] { flex-direction: column; gap: 12px; }
-  .dark-toggle { width: 45px; height: 45px; bottom: 16px; right: 16px; font-size: 1.2em; }
-  .wa { bottom: 16px; right: 16px; width: 50px; height: 50px; }
+    body { font-size: 14px; }
 }
 
 @media (max-width: 480px) {
-  nav { padding: 0 12px; height: 52px; }
-  .logo { font-size: 0.95em; }
-  .nl { gap: 8px; }
-  .nl a { font-size: 0.7em; }
-  .ncta { padding: 7px 12px; font-size: 0.8em; }
-  .hero { min-height: 85vh; }
-  .hcont { padding: 0 12px; }
-  .hero h1 { font-size: 1.6em; margin-bottom: 12px; }
-  .hero h1 i { display: block; }
-  .hero p { font-size: 0.9em; margin-bottom: 16px; }
-  .hbadge { padding: 5px 12px; font-size: 0.65em; }
-  .btn { padding: 10px 16px; font-size: 0.82em; }
-  .hst { gap: 12px; }
-  .hs { min-width: 80px; }
-  .hs b { font-size: 1.8em; }
-  .sh { font-size: 1.3em; margin-bottom: 6px; }
-  .sec { padding: 40px 12px; }
-  .card, .blog-card { margin-bottom: 12px; }
-  .step { padding: 16px 12px; margin: 10px 0; }
-  .form-box { padding: 16px; }
-  form input { padding: 9px 10px; font-size: 0.82em; margin-bottom: 8px; }
-  div[style*="display:flex"][style*="gap:10px"] { flex-direction: column; }
-  footer { padding: 20px 12px; }
-  footer div[style*="text-align:center"] { font-size: 0.85em; }
-  .dark-toggle { width: 45px; height: 45px; bottom: 70px; right: 12px; font-size: 1.1em; }
-  .wa { bottom: 12px; right: 12px; width: 48px; height: 48px; font-size: 1.2em; }
-  div[style*="position:fixed"][style*="bottom:26px"] button { width: 48px; height: 48px; font-size: 1.2em; }
-  div[style*="position:fixed"][style*="top:0"][style*="left:0"] { padding: 10px; }
-  iframe { height: 250px !important; }
+    body { font-size: 13px; }
 }
 
-@media (max-width: 360px) {
-  .logo { font-size: 0.85em; }
-  .hero h1 { font-size: 1.4em; }
-  .sh { font-size: 1.2em; }
-  .btn { padding: 9px 14px; font-size: 0.78em; }
-  iframe { height: 220px !important; }
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 2rem 1rem;
+        min-height: 250px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+@media (max-width: 480px) {
+    .btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.service-item {
+    background: var(--light);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent);
+    border-radius: 4px;
+}
+
+.service-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        margin: 1.5rem 0;
+    }
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 480px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+.info-item {
+    background: var(--light);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.info-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 480px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.blog-post {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 480px) {
+    .blog-post img {
+        height: 150px;
+    }
+}
+
+.blog-content {
+    padding: 1.5rem;
+}
+
+.blog-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.blog-content p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+h1, h2, h3, h4 {
+    color: var(--primary);
+}
+
+strong {
+    color: var(--primary);
+}
+
+.highlight {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 1.5rem 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        margin: 1rem 0;
+    }
+}
+
+.testimonials {
+    background: var(--light);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.testimonial {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-left: 4px solid var(--accent);
+    background: white;
+    border-radius: 4px;
+}
+
+@media (max-width: 480px) {
+    .testimonials {
+        padding: 1.5rem;
+    }
+    
+    .testimonial {
+        margin: 1rem 0;
+        padding: 0.8rem;
+    }
+}
+
+.faq {
+    margin: 2rem 0;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+}
+
+.faq-question {
+    background: var(--light);
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+.faq-question:hover {
+    background-color: #e8e8e8;
+}
+
+.faq-answer {
+    padding: 1rem;
+    display: none;
+    background: white;
+}
+
+.faq-answer.active {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+    input, textarea, select {
+        padding: 0.6rem;
+        font-size: 16px;
+    }
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(26, 71, 42, 0.3);
+}
+
+.sg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+@media (max-width: 480px) {
+    .sg {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
 }
 </style>
-<!-- Restante conteudo HTML omitido. O arquivo completo foi gerado para commit. -->
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🦟 Easy Desinfestações</div>
+        <ul class="nav-links">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Controlo de Pragas em Lisboa</h1>
+    <p>Soluções profissionais e garantidas para baratas, ratos, percevejos e mais!</p>
+    <a href="tel:965779519" class="btn">☎️ Ligar Agora: 965 779 519</a>
+</section>
+
+<div class="container">
+    <section id="servicos">
+        <h2>🔥 Nossos Serviços</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h4>🪳 Baratas</h4>
+                <p>Eliminação completa e tratamento preventivo</p>
+            </div>
+            <div class="service-item">
+                <h4>🐭 Ratos</h4>
+                <p>Controlo e vedação de entrada</p>
+            </div>
+            <div class="service-item">
+                <h4>🧛 Percevejos</h4>
+                <p>Tratamento especializado</p>
+            </div>
+            <div class="service-item">
+                <h4>🐜 Formigas</h4>
+                <p>Eliminação de colónias</p>
+            </div>
+            <div class="service-item">
+                <h4>🐝 Vespas</h4>
+                <p>Remoção segura de ninhos</p>
+            </div>
+            <div class="service-item">
+                <h4>🦟 Pulgas</h4>
+                <p>Tratamento completo de espaço</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>📍 Sobre a Easy Desinfestações</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Localização</h3>
+                <p><strong>Massamá, Lisboa</strong></p>
+                <p>Servindo a região de Lisboa e arredores 24/7</p>
+            </div>
+            <div class="card">
+                <h3>Qualidade</h3>
+                <p>Profissionais certificados com <strong>4.5★</strong> no Fixando.pt</p>
+            </div>
+            <div class="card">
+                <h3>Garantia</h3>
+                <p>Serviço garantido com acompanhamento pós-tratamento</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info" id="contato">
+        <div class="info-item">
+            <h4>☎️ Telefone</h4>
+            <p><a href="tel:965779519" style="color: var(--accent); text-decoration: none;">965 779 519</a></p>
+            <p><a href="tel:910742216" style="color: var(--accent); text-decoration: none;">910 742 216</a></p>
+        </div>
+        <div class="info-item">
+            <h4>📧 Email</h4>
+            <p><a href="mailto:info@easyd.pt" style="color: var(--accent); text-decoration: none;">info@easyd.pt</a></p>
+        </div>
+        <div class="info-item">
+            <h4>⭐ Rating</h4>
+            <p>4.5★ no Fixando.pt</p>
+            <p><strong>Disponível 24/7</strong></p>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>📰 Blog & Dicas</h2>
+        <div class="blog-grid">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x200" alt="Prevenir baratas">
+                <div class="blog-content">
+                    <h3>Como prevenir baratas?</h3>
+                    <p>Dicas essenciais para manter sua casa livre de baratas.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x200" alt="Sinais de ratos">
+                <div class="blog-content">
+                    <h3>Sinais de infestação de ratos</h3>
+                    <p>Identifique rapidamente a presença de roedores.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x200" alt="Percevejos">
+                <div class="blog-content">
+                    <h3>Tudo sobre percevejos</h3>
+                    <p>Conhecer o inimigo é o primeiro passo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>⭐ Depoimentos</h2>
+        <div class="testimonial">
+            <p><strong>João Silva:</strong> "Excelente serviço! Resolveu o problema em 48h."</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Maria Costa:</strong> "Profissionais muito educados e eficientes!"</p>
+        </div>
+        <div class="testimonial">
+            <p><strong>Pedro Oliveira:</strong> "Recomendo fortemente! Melhor que os concorrentes."</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>❓ Perguntas Frequentes</h2>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">É seguro para animais de estimação?</div>
+            <div class="faq-answer">
+                <p>Sim! Utilizamos produtos seguros e recomendamos afastar animais durante o tratamento.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">Quanto custa um tratamento?</div>
+            <div class="faq-answer">
+                <p>Os preços variam conforme o tipo de praga e tamanho do espaço. Contacte-nos para orçamento!</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleFAQ(this)">Qual é a garantia do serviço?</div>
+            <div class="faq-answer">
+                <p>Oferecemos garantia de 30 dias com acompanhamento pós-tratamento.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Easy Desinfestações. Controlo de Pragas Profissional em Lisboa</p>
+    <p>Telefone: 965 779 519 | Email: info@easyd.pt</p>
+    <p>Massamá, Lisboa | Disponível 24/7</p>
+</footer>
+
+<script>
+function toggleFAQ(element) {
+    const answer = element.nextElementSibling;
+    answer.classList.toggle('active');
+}
+
+// Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+</body>
+</html>
